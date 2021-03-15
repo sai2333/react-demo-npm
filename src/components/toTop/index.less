@@ -1,0 +1,42 @@
+.animation-icon-top{
+  animation-name: toTop;
+  animation-duration: .6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes toTop {
+  0% {
+      transform: translateY(0px);
+  }
+
+  100% {
+      transform: translateY(-6px);
+  } 
+}
+.to-top-wrap{
+    cursor: pointer;
+    width: 50px;
+      height: 50px;
+    background-color: #00aa80;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    .icon{
+      font-size: 20px;
+    }
+    .text{
+      font-size: 16px;
+      margin-top: -6px;
+    }
+    &:hover{
+      .icon{
+        .animation-icon-top;
+      }
+    }
+  }

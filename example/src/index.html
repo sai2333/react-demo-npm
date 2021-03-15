@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div class="header_container"></div>
+    <script src="bundle.js"></script> 
+    <script>
+        window.onload = function () {
+            new PcHeader({
+                container: '.header_container',
+                rightMenu: [
+                    {id: 0,url: '/',text: '首页'},
+                    {id: 1,url: '/',text: '关于我们'},
+                    {id: 2,url: '/',text: '公益支持'},
+                ]
+            }).init()
+        }
+    </script>
+</body>
+</html>
